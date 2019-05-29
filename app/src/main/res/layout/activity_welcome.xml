@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.monke.immerselayout.ImmerseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30000000"
+    app:need_immerse="true">
+
+    <com.monke.immerselayout.ImmerseFrameLayout
+        android:id="@+id/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        app:need_immerse="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#ffffff" />
+    </com.monke.immerselayout.ImmerseFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_welcome"
+        android:visibility="gone" />
+
+    <com.monke.immerselayout.ImmerseFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:need_immerse="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/iv_transfer_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_reader_black"
+                    android:gravity="center"
+                    android:drawablePadding="5dp"
+                    android:text="EasyReader"
+                    android:textColor="@color/tv_btn_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="EasyReader"
+                    android:textColor="#ffffff"
+                    android:drawablePadding="5dp"
+                    android:textSize="22sp"
+                    android:drawableLeft="@drawable/icon_reader_white"
+                    android:textStyle="bold|italic" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:alpha="0"
+                android:text="你的便携小说管家"
+                android:textColor="#343434"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </com.monke.immerselayout.ImmerseFrameLayout>
+
+</com.monke.immerselayout.ImmerseFrameLayout>

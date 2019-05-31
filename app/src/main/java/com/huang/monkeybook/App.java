@@ -17,6 +17,7 @@ import com.zhouyou.http.cache.converter.SerializableDiskConverter;
 
 import java.net.Proxy;
 
+import cn.jpush.android.api.JPushInterface;
 import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.Response;
